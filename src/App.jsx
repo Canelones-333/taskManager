@@ -3,7 +3,11 @@ import Form from "./components/Form"
 import List from "./components/List"
 
 function App() {
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState([{
+    id: 'sadadasda',
+    nombre: 'algo',
+    descripcion: 'nuevo'
+  }])
 
   const addTask = (task) => {
     setTasks([
@@ -18,7 +22,7 @@ function App() {
   }
   
   return (
-    <div className="size-20 bg-red-800">
+    <div className="flex p-10 justify-between gap-10">
       <Form addTask={addTask}/>
       <List tasks={tasks} deleteTask={deleteTask}/>
     </div>

@@ -1,14 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Onest;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,3 +15,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  height: 100vh;
+  background: -webkit-linear-gradient(180deg, #71a3f4, #4510b7);
+  background: linear-gradient(180deg, #71a3f4, #4510b7);
+}
